@@ -213,7 +213,7 @@ ul.menu > li li .fa{color:#daa769;font-size:18px;padding-right:15px;}
 ul.menu ul{overflow:visible;}
 ul.menu ul .whith_keys{display:none;left:220px;top:0;border:1px solid #514C4C;position:absolute;background:#fff;box-sizing:content-box;margin-top:-1px;}
 ul.menu ul .whith_keys .key{color:#DAA769;text-decoration:underline;cursor:pointer;font-size:16px;line-height:20px;padding:20px 20px 10px;font-family:'mariupolmedium';}
-ul.menu ul li.hover .whith_keys{display:block;opacity:1;visibility:visible;width:400px;min-height:100%;}
+ul.menu ul li:hover .whith_keys{display:block;opacity:1;visibility:visible;width:400px;min-height:100%;}
 ul.menu ul .whith_keys > div{padding:15px;}
 ul.menu ul .whith_keys div.ul{display:inline-block;vertical-align:top;width:49%;margin-bottom:10px;}
 ul.menu ul .whith_keys .fa{font-size:4px;padding-right:5px;line-height:16px;}
@@ -810,7 +810,7 @@ ul.catalog-number a:hover{color:#daa769;}
 .modal .modal-dialog{border:15px solid #c6a38a;width:auto;}
 .information-information .modal-dialog{width:auto;}
 .modal1 .modal-content-,
-.modal .modal-content1{background:#fff;padding:25px;}
+.modal .modal-content1{background:#fff;padding:25px; height: 100%;}
 .modal .success_ico:before{content:'';position:absolute;left:50%;top:80px;width:60px;height:56px;margin-left:-30px;background:url(../img/spriten.png) 0 -30px no-repeat;}
 #send_success{z-index:1080;}
 #send_success .modal-body{color:#534d51;font-size:38px;font-family:'mariupolmedium';}
@@ -887,7 +887,7 @@ ul.catalog-number a:hover{color:#daa769;}
 #search-form1 fieldset{position:relative;}
 #search-form1 input[type=text]{background:none;height:62px;line-height:62px;font-size:13px;padding:2px 5px 2px 5px;margin:0 0px 0 0px;width:80px;vertical-align:top;color:#a97d61;border-bottom:1px solid #a97d61!important;}
 .search1{display:none;}
-#search-form1 .close{font-size:24px;font-weight:400;position:absolute;right:5px;top:0px;}
+#search-form1 .close{font-size:24px;cursor: pointer; font-weight:400;position:absolute;right:5px;top:0px;}
 .zay_na_raschet{right:0;top:-70px;background:#fff;padding: 25px;}
 
 .box-top{margin-top:30px;padding-top:20px;background:-moz-linear-gradient(90deg, #f3f2ed 0%, #ffffff 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f3f2ed));background:-webkit-linear-gradient(90deg, #f3f2ed 0%, #ffffff 100%);background:-o-linear-gradient(90deg, #f3f2ed 0%, #ffffff 100%);background:-ms-linear-gradient(90deg, #f3f2ed 0%, #ffffff 100%);background:linear-gradient(0deg, #f3f2ed 0%, #ffffff 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f3f2ed',GradientType=0);}

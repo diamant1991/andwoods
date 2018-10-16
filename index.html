@@ -890,5 +890,49 @@
   <script src="js/lib/masonry.js"></script>
   <script src="js/lib/maskdeinput.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    if($('#search-form1').length) {
+    
+    $('a[href="#search"]').click(function(){
+      //one
+      //console.log(this);
+      if($(this).hasClass('active')){
+        hideSearch();
+        //console.log('hide');
+      } else {
+        //console.log('show');
+        $('#search-form1').fadeIn(100, function(){
+          $('a[href="#search"]').addClass('active');
+          $(this).stop().animate({'margin-right': -$('header .user').outerWidth()}, 200);
+          $('input[name="search"]', this).stop().animate({'width': 190, 'padding-left': 10}, 200);
+        //console.log($('a[href="#search"]'));  
+        });
+        
+      }
+      
+      return false;
+    });
+    $('#search-form1 .close').click(function(){
+      hideSearch();
+    });
+
+    $(document).mouseup(function (e) {
+        /*var container = $("#search-form1");
+        var container1 = $('a[href="#search"]');
+        if (container.has(e.target).length === 0 && $('a[href="#search"]').hasClass('active')) {
+            hideSearch();
+        } */
+    });
+    
+    function hideSearch(){
+      $('#search-form1 input[name="search"]').stop().animate({'width': 0, 'padding-left': 2}, 200);
+      $('#search-form1').stop().animate({'margin-right': -43}, 200, function(){
+        $(this).fadeOut(100);
+      });
+      $('a[href="#search"]').removeClass('active');
+    }
+    
+  }
+  </script>
 </body>
 </html>
