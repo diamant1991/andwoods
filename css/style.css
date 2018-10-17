@@ -1023,3 +1023,35 @@ ul.tabs-list li span{color:#666875;}
 
 a.load_more {
   display:inline-block; margin:0 auto 20px auto; padding: 0.5em 2em; border: 1px solid #069; border-radius: 5px; text-decoration:none; text-transform:uppercase;            }
+
+
+.file-upload {
+   position: relative;
+   overflow: hidden; 
+   color: #fff;
+   height: 30px;
+	 font-size: 15px;
+	 color: #837e81;
+}
+
+.file-upload input[type="file"]{
+    display: none;
+}
+.file-upload label {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+}
+.file-upload label:before{
+	content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 30px;
+  margin-right: 10px;
+  background: url(../img/spriten.png) -27px 0 no-repeat;
+}

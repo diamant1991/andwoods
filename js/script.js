@@ -53,6 +53,13 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+
+  $(".file-upload input[type=file]").change(function(){
+     var filename = $(this).val().replace(/.*\\/, "");
+     var filetext = $(this).closest('.file-upload').next()
+     filetext.text(filename);
+  });
+
   $("#owl-demo").owlCarousel({    
       items : 1,
       nav: true,
@@ -95,6 +102,8 @@ $(document).ready(function() {
         $('#owl-demo2 .owl-controls').appendTo('#controll2');
       }*/
   }); 
+
+
 });
 
 /*$('.hovertip').on('click',function(){

@@ -696,7 +696,13 @@
                         </div>
                         <div class="clear buttons">
                           <div class="left">
-                            <a data-loading-text="Загрузка... &lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt;" id="buttonfile2"><label for="in_namefile">Прикрепить файл</label></a> <input id="in_namefile" name="namefile" readonly type="text" value=""> <input name="file" type="hidden" value="">
+                            <div class="file-upload">
+                               <label>
+                                  <input type="file" name="file">
+                                  <span>Прикрепить файл</span>
+                               </label>
+                            </div>
+                            <div class="file-text"></div>
                           </div>
                           <div class="right">
                             <a class="send button b1" data-loading-text="Отправляется... &lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt;" onclick="forma_act='home';return false;">Отправить</a>
@@ -787,7 +793,13 @@
               </div>
               <div class="clear buttons">
                 <div class="left">
-                  <a data-loading-text="Загрузка... &lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt;" id="buttonfile5">Прикрепить</a> <input name="namefile" readonly type="text" value=""> <input name="file" type="hidden" value="">
+                  <div class="file-upload">
+                     <label>
+                        <input type="file" name="file">
+                        <span>Прикрепить файл</span>
+                     </label>
+                  </div>
+                  <div class="file-text"></div>
                 </div>
                 <div class="right">
                   <a class="send button b1" data-loading-text="Отправляется... &lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt;" href="" onclick="return false;" rel="nofollow">Отправить</a>
