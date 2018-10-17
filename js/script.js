@@ -50,6 +50,14 @@ $(document).ready(function() {
   $('.colorbox4').on('click', function() {
     $('#colorbox4').modal('show');
   });
+  $('.getProdCalc').on('click', function() {
+    $('#modal-online-raschet').modal('show');
+  });
+  $('.getProd').on('click', function() {
+    $('#popupproduct').modal('show');
+  });
+  
+  
 });
 
 $(document).ready(function() {

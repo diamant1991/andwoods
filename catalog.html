@@ -8,6 +8,7 @@
   <link href="fonts/fontawesome-webfont.woff2?v=4.4.0" type="font/woff2">
   <link href="fonts/lato-italic-webfont.woff2" type="font/woff2">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owl-carousel.css">
   <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.0.0.min.js"></script>
 </head>
 <body>
@@ -896,11 +897,123 @@
       </div>
     </div>
     <a id="arrow_top" onclick="scroll_to_top();"></a>
+    <div class="modal" id="modal-online-raschet">
+      <div class="modal-dialog">
+        <div class="modal-content1">
+          <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+          <div class="id3_1 new">
+            <div class="title">
+              Онлайн расчет
+            </div>
+            <div class="forma_content2">
+              <div class="tcontent">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="name2">
+                      Материал фасада
+                    </div>
+                    <div class="cont">
+                      <input data-kef="1" id="mater1" name="mater" type="radio" value="ЛДСП"><label for="mater1">ЛДСП <span class="tipbubble1">Фасады ЛДСП покрытые Итальянским пластиком ARPA. Современный стиль и яркая фактура.</span></label> <input data-kef="1.5" id="mater2" name="mater" type="radio" value="Эмаль (МДФ)"><label for="mater2">Эмаль (МДФ) <span class="tipbubble1">Фасады из МДФ с защитным покрытием (пленка или эмаль). Классический стиль и оптимальная стоимость</span></label> <input data-kef="1.7" id="mater3" name="mater" type="radio" value="Массив дуба"><label for="mater3">Массив дерева <span class="tipbubble1">Фасады из массива дуба или ясеня. Индивидуальность в сочетании с классическим стилем. Премиальное решение</span></label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="name2">
+                      Комплектация
+                    </div>
+                    <div class="cont">
+                      <input checked data-price="0" id="koml1" name="kompl" type="radio" value="Стандарт"><label for="koml1">Стандарт <span class="tipbubble1">Базовая комплектация - корпус ЛДСП и фурнитура РФ, элементы декора отсутствуют</span></label> <input data-price="15000" id="koml2" name="kompl" type="radio" value="Комфорт"><label for="koml2">Комфорт <span class="tipbubble1">Популярная комплектация из стандартных элементов. Карниз и цоколь входит в комплект, элементы декора отсутствуют</span></label> <input data-price="30000" id="koml3" name="kompl" type="radio" value="Престиж"><label for="koml3">Престиж <span class="tipbubble1">Индивидуальные размеры и насыщенная комплектация. Все элементы декора присутствуют и определяются индивидуально</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="name2">
+                      Фурнитура
+                    </div>
+                    <div class="cont">
+                      <input checked data-price="0" id="furnit1" name="furnit" type="radio" value="Стандарт"><label for="furnit1">Стандарт <span class="tipbubble1">Фурнитура со стандартной системой доводки. Используются шариковые подшибники в системе направляющих</span></label> <input data-price="10000" id="furnit2" name="furnit" type="radio" value="BLUM премиум"><label for="furnit2">BLUM премиум <span class="tipbubble1">Современные технологии, максимальный комфорт (без шумные системы доводки). Премиальные решение от компании BLUM / Австралия</span></label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="name2">
+                      Размеры
+                    </div>
+                    <div class="cont">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                          <span class="name">Длина (см):</span> <input name="dlina" type="text" value="150">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                          <span class="name">Высота (см):</span> <input name="height" type="text" value="150">
+                        </div>
+                      </div>
+                      <div class="forma_content2">
+                        <div class="endsum">
+                          Итоговая стоимость: <span>Укажите материал фасада!</span>
+                        </div><input name="model" type="hidden" value="Sk-0995"> <input name="nameproduct" type="hidden" value="Библиотека Линнетт"> <input id="pricetotal" name="pricetotal" type="hidden" value="29&nbsp;900 р.">
+                        <div class="tipbubble1">
+                          Для уточнения деталей и расчета конечной стоимости - отправьте заявку
+                        </div>
+                        <div class="but1 fleft">
+                          <a class="button b1" data-loading-text="Отправляется... &lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt;" href="" onclick="return false;">Заказать</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal ver2" id="popupproduct">
+      <!-- <div class="modal-dialog container"> -->
+      <div class="container">
+        <div class="row" style="margin-top:0;">
+          <div class="modal-content1">
+            <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+            <div class="id3_1 new">
+              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-0" id="product">
+                <div class="row" style="margin-top: 0px;">
+                  <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                    <h1>Библиотека Архивариус</h1>
+                    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js">
+                    </script> 
+                    <script src="https://yastatic.net/share2/share.js">
+                    </script>
+                  </div>
+                  <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12">
+                    <div class="price">
+                      <div class="pr">
+                        Цена от: <span>36&nbsp;800 р. за м<sup>2</sup></span>
+                      </div>
+                      <div class="help">
+                        В стандартной комплектации, фасад из МДФ
+                      </div>
+                    </div>
+                    <div>
+                      <button class="button b3 clear getProdCalc" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt;" data-prid="2716" style="display:block;" type="button">Онлайн-расчет</button> <a class="button b2 clear" href="https://mebel-bruno.ru/product/biblioteka-arhivarius/" style="display:block;" title="Библиотека Архивариус">Перейти в карточку товара</a>
+                    </div>
+                  </div>
+                  <div class="owl-carousel owl-theme thumbnails" id="owl-demo">
+                    <div class="item">
+                      <a class="thumbnail_" href="https://mebel-bruno.ru/product/biblioteka-linnett/" title="Библиотека Линнетт"><img alt="Библиотека Линнетт" height="731" src="https://mebel-bruno.ru/image/catalog/product/biblioteki/model_57bibliotekalinnett/bibliotekalinnett.jpg" title="Библиотека Линнетт" width="1125"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
    </div>
 
 
   <script src="js/lib/slick.min.js"></script>
   <script src="js/lib/bootstrap.js"></script>
+  <script src="js/lib/owl-carousel.js"></script>
   <script src="js/lib/masonry.js"></script>
   <script src="js/lib/maskdeinput.js"></script>
   <script src="js/script.js"></script>
