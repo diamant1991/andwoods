@@ -53,9 +53,7 @@ $(document).ready(function() {
   $('.getProdCalc').on('click', function() {
     $('#modal-online-raschet').modal('show');
   });
-  $('.getProd').on('click', function() {
-    $('#popupproduct').modal('show');
-  });
+  
   
   
 });
@@ -73,6 +71,13 @@ $(document).ready(function() {
       nav: true,
       navText : ['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>']
   }); 
+
+  $(".card-carousel").owlCarousel({    
+      items : 1,
+      nav: true,
+      navText : ['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>']
+  }); 
+
 
   owl = $("#owl-demo1");
   //owl.owlCarousel({    
